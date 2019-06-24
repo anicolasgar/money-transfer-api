@@ -24,9 +24,9 @@ public class Account implements IAccount {
 
     public Account(Long id, Currency currency,
                    boolean active, BigDecimal balance) {
-        Objects.requireNonNull(id, "Id cannot be null");
-        Objects.requireNonNull(currency, "Currency cannot be null");
-        Objects.requireNonNull(balance, "Balance cannot be null");
+        Objects.requireNonNull(id, "id cannot be null");
+        Objects.requireNonNull(currency, "currency cannot be null");
+        Objects.requireNonNull(balance, "balance cannot be null");
         Validator.validateAmountNotNegative(balance);
 
         this.id = id;
@@ -58,7 +58,7 @@ public class Account implements IAccount {
 
     @Override
     public boolean debit(BigDecimal amount) {
-        Objects.requireNonNull(amount, "Amount cannot be null");
+        Objects.requireNonNull(amount, "amount cannot be null");
         Validator.validateAmountNotNegative(amount);
 
         try {
@@ -80,7 +80,7 @@ public class Account implements IAccount {
 
     @Override
     public boolean credit(BigDecimal amount) {
-        Objects.requireNonNull(amount, "Amount cannot be null");
+        Objects.requireNonNull(amount, "amount cannot be null");
         Validator.validateAmountNotNegative(amount);
 
         try {
