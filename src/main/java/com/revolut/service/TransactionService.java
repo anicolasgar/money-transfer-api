@@ -34,9 +34,14 @@ public enum TransactionService implements IService<Transaction, TransactionDTO> 
     }
 
     @Override
-    public synchronized Transaction create(TransactionDTO transactionDTO) throws ConstraintsViolationException {
+    public synchronized Transaction create(TransactionDTO transactionDTO) throws ConstraintsViolationException, NotFoundException {
         Account debitAccount = AccountRepository.getInstance().findById(transactionDTO.getDebitAccount());
+        if (debitAccount == null)
+            throw new NotFoundException("account " + transactionDTO.getDebitAccount() + " not found");
+
         Account creditAccount = AccountRepository.getInstance().findById(transactionDTO.getCreditAccount());
+        if (creditAccount == null)
+            throw new NotFoundException("account " + transactionDTO.getDebitAccount() + " not found");
 
         final Lock debitLock = debitAccount.writeLock();
         try {
@@ -49,8 +54,9 @@ public enum TransactionService implements IService<Transaction, TransactionDTO> 
                                 if (creditAccount.credit(transactionDTO.getAmount())) {
                                     transactionDTO.setState(TransactionState.COMPLETED);
                                 }
+                            } else {
+                                transactionDTO.setState(TransactionState.INSUFFICIENT_FUNDS);
                             }
-                            transactionDTO.setState(TransactionState.INSUFFICIENT_FUNDS);
                         } finally {
                             creditLock.unlock();
                         }

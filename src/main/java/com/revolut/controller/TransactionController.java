@@ -8,24 +8,32 @@ import com.revolut.util.JsonUtils;
 import spark.Request;
 import spark.Response;
 
+import javax.servlet.http.HttpServletResponse;
+
 public class TransactionController {
-    private static TransactionService transactionService;
 
     public static Object getById(Request request, Response response) throws Exception {
         Long transactionId = Long.parseLong(request.params(":id"));
-        return transactionService.INSTANCE.findById(transactionId);
+
+        response.status(HttpServletResponse.SC_OK);
+        Transaction transaction= TransactionService.INSTANCE.findById(transactionId);
+        return JsonUtils.make().toJson(transaction);
     }
 
     public static Object createTransaction(Request request, Response response) throws Exception {
         final TransactionDTO transactionDTO = JsonUtils.make().fromJson(request.body(), TransactionDTO.class);
-        Transaction transaction = transactionService.INSTANCE.create(transactionDTO);
-        return transaction;
+        Transaction transaction = TransactionService.INSTANCE.create(transactionDTO);
+
+        response.status(HttpServletResponse.SC_CREATED);
+        return JsonUtils.make().toJson(transaction);
     }
 
     public static Object delete(Request request, Response response) throws Exception {
         Long transactionId = Long.parseLong(request.params(":id"));
-        transactionService.INSTANCE.delete(transactionId);
-        return "";
+        TransactionService.INSTANCE.delete(transactionId);
+
+        response.status(HttpServletResponse.SC_OK);
+        return JsonUtils.make().toJson(true);
     }
 
 }

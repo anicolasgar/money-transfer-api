@@ -1,5 +1,6 @@
 package com.revolut.extensions;
 
+import com.revolut.TestHelper;
 import com.revolut.router.Router;
 import org.junit.jupiter.api.extension.AfterAllCallback;
 import org.junit.jupiter.api.extension.BeforeAllCallback;
@@ -11,15 +12,16 @@ import spark.Spark;
 public class ApiTestExtension implements BeforeAllCallback, AfterAllCallback {
     private static final Logger logger = LoggerFactory.getLogger(ApiTestExtension.class);
     private long start;
+    protected int PORT_USED=8080;
 
     @Override
     public void beforeAll(ExtensionContext extensionContext) throws Exception {
         start = System.currentTimeMillis();
-        int port = 8080;
-        Spark.port(port);
+        Spark.port(PORT_USED);
         new Router().init();
         Spark.awaitInitialization();
-        logger.info("Spark server running in port: " + port + ".... ");
+        TestHelper.initializeAccounts();
+        logger.info("Spark server running in port: " + PORT_USED + ".... ");
     }
 
     @Override

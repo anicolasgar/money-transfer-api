@@ -11,7 +11,7 @@ public interface IService<DO, DTO> {
 
     List<DO> findAll();
 
-    DO create(DTO domainObject) throws ConstraintsViolationException;
+    DO create(DTO domainObject) throws ConstraintsViolationException, NotFoundException;
 
     void delete(Long id) throws NotFoundException;
 }

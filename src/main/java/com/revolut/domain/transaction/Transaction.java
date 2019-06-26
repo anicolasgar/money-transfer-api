@@ -20,11 +20,11 @@ public class Transaction implements ITransaction {
 
     public Transaction(Long id, Long debitAccount, Long creditAccount, BigDecimal amount, TransactionState transactionState) {
 
-        Objects.requireNonNull(id, "id cannot be null");
-        Objects.requireNonNull(debitAccount, "debit_account cannot be null");
-        Objects.requireNonNull(creditAccount, "credit_account cannot be null");
-        Objects.requireNonNull(amount, "amount cannot be null");
-        Objects.requireNonNull(transactionState, "transaction_state cannot be null");
+        Validator.validateNotNull(id, "id cannot be null");
+        Validator.validateNotNull(debitAccount, "debit_account cannot be null");
+        Validator.validateNotNull(creditAccount, "credit_account cannot be null");
+        Validator.validateNotNull(amount, "amount cannot be null");
+        Validator.validateNotNull(transactionState, "transaction_state cannot be null");
         Validator.validateAmountNotNegative(amount);
         Validator.validateDifferentAccounts(creditAccount, debitAccount);
 

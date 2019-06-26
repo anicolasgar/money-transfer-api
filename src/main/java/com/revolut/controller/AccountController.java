@@ -8,27 +8,34 @@ import spark.Request;
 import spark.Response;
 import spark.Spark;
 
+import javax.servlet.http.HttpServletResponse;
+
 import static spark.Spark.path;
 
 public class AccountController {
 
-    private static AccountService accountService;
-
     public static Object getById(Request request, Response response) throws Exception {
         Long accountId = Long.parseLong(request.params(":id"));
-        return accountService.INSTANCE.findById(accountId);
+
+        response.status(HttpServletResponse.SC_OK);
+        Account account = AccountService.INSTANCE.findById(accountId);
+        return JsonUtils.make().toJson(account);
     }
 
     public static Object createAccount(Request request, Response response) throws Exception {
         final AccountDTO accountDTO = JsonUtils.make().fromJson(request.body(), AccountDTO.class);
-        Account account = accountService.INSTANCE.create(accountDTO);
-        return account;
+        Account account = AccountService.INSTANCE.create(accountDTO);
+        response.status(HttpServletResponse.SC_CREATED);
+
+        return JsonUtils.make().toJson(account);
     }
 
     public static Object delete(Request request, Response response) throws Exception {
         Long accountId = Long.parseLong(request.params(":id"));
-        accountService.INSTANCE.delete(accountId);
-        return "";
+        AccountService.INSTANCE.delete(accountId);
+
+        response.status(HttpServletResponse.SC_OK);
+        return JsonUtils.make().toJson(true);
     }
 
 }

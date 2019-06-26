@@ -10,6 +10,13 @@ public class AccountDTO {
     private boolean active;
     private BigDecimal balance;
 
+    public AccountDTO(Long id, Currency currency, boolean active, BigDecimal balance) {
+        this.id = id;
+        this.currency = currency;
+        this.active = active;
+        this.balance = balance;
+    }
+
     public Long getId() {
         return id;
     }

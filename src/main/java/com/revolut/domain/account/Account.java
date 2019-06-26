@@ -24,9 +24,9 @@ public class Account implements IAccount {
 
     public Account(Long id, Currency currency,
                    boolean active, BigDecimal balance) {
-        Objects.requireNonNull(id, "id cannot be null");
-        Objects.requireNonNull(currency, "currency cannot be null");
-        Objects.requireNonNull(balance, "balance cannot be null");
+        Validator.validateNotNull(id, "id cannot be null");
+        Validator.validateNotNull(currency, "currency cannot be null");
+        Validator.validateNotNull(balance, "balance cannot be null");
         Validator.validateAmountNotNegative(balance);
 
         this.id = id;

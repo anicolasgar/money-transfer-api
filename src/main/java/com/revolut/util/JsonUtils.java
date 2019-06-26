@@ -6,8 +6,10 @@
 package com.revolut.util;
 
 import com.google.gson.Gson;
+import spark.Response;
 //import lombok.Getter;
 //import lombok.ToString;
+//import com.fasterxml.jackson.databind.ObjectMapper;
 
 public final class JsonUtils {
 
@@ -22,8 +24,6 @@ public final class JsonUtils {
         return make().toJson(info);
     }
 
-//    @Getter
-//    @ToString
     private static class ErrorInfo {
 
         private final int errorCode;
@@ -34,4 +34,5 @@ public final class JsonUtils {
             this.errorMessage = err.getLocalizedMessage();
         }
     }
+
 }
