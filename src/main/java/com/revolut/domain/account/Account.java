@@ -8,7 +8,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -27,7 +26,7 @@ public class Account implements IAccount {
         Validator.validateNotNull(id, "id cannot be null");
         Validator.validateNotNull(currency, "currency cannot be null");
         Validator.validateNotNull(balance, "balance cannot be null");
-        Validator.validateAmountNotNegative(balance);
+        Validator.validateNotNegative(balance, "balance");
 
         this.id = id;
         this.currency = currency;
@@ -58,11 +57,11 @@ public class Account implements IAccount {
 
     @Override
     public boolean debit(BigDecimal amount) {
-        Objects.requireNonNull(amount, "amount cannot be null");
-        Validator.validateAmountNotNegative(amount);
+        Validator.validateNotNull(amount, "amount cannot be null");
+        Validator.validateNotNegative(amount, "amount");
 
         try {
-            if (lock.tryLock(Config.ACCOUNT_WAIT_INTERVAL, TimeUnit.MILLISECONDS)) {
+            if (lock.tryLock(Config.getLong("transactions.lock.wait.interval"), TimeUnit.MILLISECONDS)) {
                 try {
                     if (balance.compareTo(amount) > 0) {
                         balance = balance.subtract(amount);
@@ -80,11 +79,11 @@ public class Account implements IAccount {
 
     @Override
     public boolean credit(BigDecimal amount) {
-        Objects.requireNonNull(amount, "amount cannot be null");
-        Validator.validateAmountNotNegative(amount);
+        Validator.validateNotNull(amount, "amount cannot be null");
+        Validator.validateNotNegative(amount, "amount");
 
         try {
-            if (lock.tryLock(Config.ACCOUNT_WAIT_INTERVAL, TimeUnit.MILLISECONDS)) {
+            if (lock.tryLock(Config.getLong("transactions.lock.wait.interval"), TimeUnit.MILLISECONDS)) {
                 try {
                     balance = balance.add(amount);
                 } finally {

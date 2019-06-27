@@ -9,8 +9,6 @@ public interface IService<DO, DTO> {
 
     DO findById(Long id) throws NotFoundException;
 
-    List<DO> findAll();
-
     DO create(DTO domainObject) throws ConstraintsViolationException, NotFoundException;
 
     void delete(Long id) throws NotFoundException;

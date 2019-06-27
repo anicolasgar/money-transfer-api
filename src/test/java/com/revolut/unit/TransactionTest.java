@@ -2,6 +2,7 @@ package com.revolut.unit;
 
 import com.revolut.domain.transaction.Transaction;
 import com.revolut.enums.TransactionState;
+import com.revolut.exception.ConstraintsViolationException;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
@@ -14,44 +15,44 @@ public class TransactionTest {
 
     @Test
     void testCreateTransactionWithNullIdShouldThrowException() {
-        NullPointerException exception = assertThrows(NullPointerException.class, () -> new Transaction(null, 2L, 3L, new BigDecimal(5), TransactionState.NEW));
-        assertEquals("id cannot be null", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> new Transaction(null, 2L, 3L, new BigDecimal(5), TransactionState.NEW));
+        assertEquals("id cannot be null", exception.getDescription());
     }
 
     @Test
     void testCreateTransactionWithNullDebitIdShouldThrowException() {
-        NullPointerException exception = assertThrows(NullPointerException.class, () -> new Transaction(1L, null, 3L, new BigDecimal(5), TransactionState.NEW));
-        assertEquals("debit_account cannot be null", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> new Transaction(1L, null, 3L, new BigDecimal(5), TransactionState.NEW));
+        assertEquals("debit_account cannot be null", exception.getDescription());
     }
 
     @Test
     void testCreateTransactionWithNullCreditIdShouldThrowException() {
-        NullPointerException exception = assertThrows(NullPointerException.class, () -> new Transaction(1L, 2L, null, new BigDecimal(5), TransactionState.NEW));
-        assertEquals("credit_account cannot be null", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> new Transaction(1L, 2L, null, new BigDecimal(5), TransactionState.NEW));
+        assertEquals("credit_account cannot be null", exception.getDescription());
     }
 
     @Test
     void testCreateTransactionWithSameCreditAccountIdAndDebitAccountIdShouldThrowException() {
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> new Transaction(1L, 2L, 2L, new BigDecimal(5), TransactionState.NEW));
-        assertEquals("credit_account and debit_account is the same account", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> new Transaction(1L, 2L, 2L, new BigDecimal(5), TransactionState.NEW));
+        assertEquals("credit_account and debit_account is the same account", exception.getDescription());
     }
 
     @Test
     void testCreateTransactionWithNullAmountShouldThrowException() {
-        NullPointerException exception = assertThrows(NullPointerException.class, () -> new Transaction(1L, 2L, 3L, null, TransactionState.NEW));
-        assertEquals("amount cannot be null", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> new Transaction(1L, 2L, 3L, null, TransactionState.NEW));
+        assertEquals("amount cannot be null", exception.getDescription());
     }
 
     @Test
     void testAccountWithNegativeAmountShouldThrowException() {
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> new Transaction(1L, 2L, 3L, new BigDecimal(-5), TransactionState.NEW));
-        assertEquals("amount cannot be negative", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> new Transaction(1L, 2L, 3L, new BigDecimal(-5), TransactionState.NEW));
+        assertEquals("amount cannot be negative", exception.getDescription());
     }
 
     @Test
     public void testCreateTransactionWithNullTransactionStateShouldThrowException() {
-        NullPointerException exception = assertThrows(NullPointerException.class, () -> new Transaction(1L, 2L, 3L, new BigDecimal(5), null));
-        assertEquals("transaction_state cannot be null", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> new Transaction(1L, 2L, 3L, new BigDecimal(5), null));
+        assertEquals("transaction_state cannot be null", exception.getDescription());
     }
 
     @Test

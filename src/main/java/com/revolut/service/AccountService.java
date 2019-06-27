@@ -17,11 +17,6 @@ public enum AccountService implements IService<Account, AccountDTO> {
     }
 
     @Override
-    public List<Account> findAll() {
-        return null;
-    }
-
-    @Override
     public Account create(AccountDTO account) throws ConstraintsViolationException {
        return AccountRepository.getInstance().create(account);
     }

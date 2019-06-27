@@ -1,5 +1,6 @@
 package com.revolut;
 
+import com.revolut.config.Config;
 import com.revolut.router.Router;
 import spark.Spark;
 import spark.utils.StringUtils;
@@ -15,13 +16,13 @@ public final class Main {
     private static final Logger log = LoggerFactory.getLogger(Main.class);
 
     public static void main(final String[] args) {
-        final String prop = System.getProperty("spark.port");
-        final int port = StringUtils.isNotBlank(prop) ? Integer.parseInt(prop) : 8080;
+        final String baseUrl = Config.getString("api.base.url");
+        final int port = Config.hasKey("api.spark.port") ? Config.getInt("api.spark.port") : 8080;
 
         Spark.port(port);
         new Router().init();
 
-        log.info("Listening on http://localhost:8080/");
+        log.info("Listening on " + baseUrl + ":" + port);
     }
 
 }

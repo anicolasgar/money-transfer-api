@@ -1,5 +1,7 @@
 package com.revolut.integration;
 
+import com.revolut.TestHelper;
+import com.revolut.config.Config;
 import com.revolut.extensions.ApiTestExtension;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -21,7 +23,7 @@ class RouterTest {
 
     @Test
     void ping() throws IOException {
-        HttpUriRequest request = new HttpGet("http://localhost:8080/ping");
+        HttpUriRequest request = new HttpGet(TestHelper.getBaseUrl() + "/ping");
         HttpResponse response = HttpClientBuilder.create().build().execute(request);
         assertEquals(HttpServletResponse.SC_OK, response.getStatusLine().getStatusCode());
         assertEquals("pong", EntityUtils.toString(response.getEntity()));

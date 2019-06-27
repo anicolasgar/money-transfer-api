@@ -71,9 +71,6 @@ public class ApiException extends RuntimeException {
         exceptionMap.put("message", this.description);
         exceptionMap.put("status", this.statusCode);
 
-//        try {
-//            return JsonUtils.toJson(exceptionMap);
-//        } catch (Exception exception) {
         return "{" +
                 "\"error\": " +
                 "\"" + this.code + "\", " +
@@ -82,7 +79,6 @@ public class ApiException extends RuntimeException {
                 "\"status\": " +
                 this.statusCode +
                 "}";
-//        }
     }
 
 }

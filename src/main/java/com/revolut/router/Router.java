@@ -3,7 +3,6 @@ package com.revolut.router;
 import com.revolut.controller.AccountController;
 import com.revolut.controller.HealthController;
 import com.revolut.controller.TransactionController;
-import com.revolut.domain.transaction.Transaction;
 import com.revolut.exception.ApiException;
 import com.revolut.util.ExceptionUtils;
 import org.slf4j.Logger;
@@ -13,7 +12,6 @@ import spark.Spark;
 import spark.servlet.SparkApplication;
 
 import javax.servlet.http.HttpServletResponse;
-import java.awt.*;
 
 public class Router implements SparkApplication {
     private static final Logger logger = LoggerFactory.getLogger(Router.class);
@@ -41,12 +39,7 @@ public class Router implements SparkApplication {
             response.status(apiException.getStatusCode());
             response.body(apiException.toJson());
             setHeaders(response);
-
-//            if (apiException.getStatusCode() >= HttpServletResponse.SC_INTERNAL_SERVER_ERROR) {
-//                NewRelic.noticeError(e);
-//            }
         });
-
 
         defineEndpoints();
     }
@@ -72,7 +65,6 @@ public class Router implements SparkApplication {
 
     @Override
     public void destroy() {
-
     }
 
 

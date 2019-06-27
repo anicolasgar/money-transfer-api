@@ -13,7 +13,6 @@ import com.revolut.repositories.TransactionRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 
@@ -29,11 +28,6 @@ public enum TransactionService implements IService<Transaction, TransactionDTO> 
     }
 
     @Override
-    public List<Transaction> findAll() {
-        return null;
-    }
-
-    @Override
     public synchronized Transaction create(TransactionDTO transactionDTO) throws ConstraintsViolationException, NotFoundException {
         Account debitAccount = AccountRepository.getInstance().findById(transactionDTO.getDebitAccount());
         if (debitAccount == null)
@@ -45,10 +39,10 @@ public enum TransactionService implements IService<Transaction, TransactionDTO> 
 
         final Lock debitLock = debitAccount.writeLock();
         try {
-            if (debitLock.tryLock(Config.ACCOUNT_WAIT_INTERVAL, TimeUnit.MILLISECONDS)) {
+            if (debitLock.tryLock(Config.getLong("transactions.lock.wait.interval"), TimeUnit.MILLISECONDS)) {
                 try {
                     final Lock creditLock = creditAccount.writeLock();
-                    if (creditLock.tryLock(Config.ACCOUNT_WAIT_INTERVAL, TimeUnit.MILLISECONDS)) {
+                    if (creditLock.tryLock(Config.getLong("transactions.lock.wait.interval"), TimeUnit.MILLISECONDS)) {
                         try {
                             if (debitAccount.debit(transactionDTO.getAmount())) {
                                 if (creditAccount.credit(transactionDTO.getAmount())) {

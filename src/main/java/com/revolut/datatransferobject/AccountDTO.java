@@ -17,6 +17,12 @@ public class AccountDTO {
         this.balance = balance;
     }
 
+    public AccountDTO(Currency currency, boolean active, BigDecimal balance) {
+        this.currency = currency;
+        this.active = active;
+        this.balance = balance;
+    }
+
     public Long getId() {
         return id;
     }

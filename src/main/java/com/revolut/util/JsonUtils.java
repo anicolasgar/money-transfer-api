@@ -6,10 +6,6 @@
 package com.revolut.util;
 
 import com.google.gson.Gson;
-import spark.Response;
-//import lombok.Getter;
-//import lombok.ToString;
-//import com.fasterxml.jackson.databind.ObjectMapper;
 
 public final class JsonUtils {
 

@@ -2,41 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc7c042-1598-4ce9-914f-e600dbb8a143" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/revolut/unit/ControllerUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/revolut/unit/ExceptionUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/money-transfer-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/money-transfer-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/config/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/controller/AccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/controller/TransactionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/AccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/TransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/TransactionDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/domain/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/domain/account/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/domain/transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/domain/transaction/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/exception/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/exception/BadRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/exception/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/exception/ApiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/exception/ApiException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/repositories/AbstractRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/repositories/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/repositories/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/repositories/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/repositories/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/repositories/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/repositories/TransactionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/router/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/router/Router.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/service/AccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/service/IService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/service/TransactionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/util/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/util/JsonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revolut/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revolut/util/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/revolut/TestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/revolut/TestHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/revolut/extensions/ApiTestExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/revolut/extensions/ApiTestExtension.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/revolut/integration/MoneyTransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/revolut/integration/MoneyTransactionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/revolut/integration/RouterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/revolut/integration/RouterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/revolut/unit/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/revolut/unit/AccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/revolut/unit/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/revolut/unit/TransactionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/controller/AccountController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/controller/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/controller/TransactionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/datatransferobject/AccountDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/datatransferobject/AccountDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/datatransferobject/TransactionDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/datatransferobject/TransactionDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/exception/BadRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/exception/BadRequestException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/exception/NotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/exception/NotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/domain/account/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/domain/account/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/domain/transaction/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/domain/transaction/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/repositories/AbstractRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/repositories/AccountRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/repositories/AccountRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/repositories/IRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/repositories/IRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/repositories/TransactionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/repositories/TransactionRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/router/Router.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/router/Router.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/service/IService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/service/IService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/service/TransactionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/service/TransactionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/util/JsonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/util/JsonUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revolut/util/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revolut/util/Validator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/revolut/extensions/ApiTestExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/revolut/extensions/ApiTestExtension.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/revolut/integration/MoneyTransactionsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/revolut/integration/MoneyTransactionsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/revolut/integration/MoneyTransactionsTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/revolut/integration/RouterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/revolut/integration/RouterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/revolut/unit/AccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/revolut/unit/AccountTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/revolut/unit/TransactionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/revolut/unit/TransactionTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,20 +57,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/controller/AccountController.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="210">
+              <caret line="19" column="56" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransactionController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/controller/TransactionController.java">
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/config/Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="24" column="63" lean-forward="true" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+            <state relative-caret-position="373">
+              <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1357#1358#0" expanded="true" />
+                <element signature="e#1410#1411#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/service/AccountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiTestExtension.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/extensions/ApiTestExtension.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Account.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/domain/account/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-206">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/service/TransactionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/TestHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoneyTransactionsTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/integration/MoneyTransactionsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="73" column="71" lean-forward="true" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,7 +176,19 @@
       <find>mo</find>
       <find>scope</find>
       <find>controllerutils</find>
+      <find>get</find>
+      <find>Object.</find>
+      <find>ds.items.service</find>
+      <find>api.base.url</find>
+      <find>8080</find>
+      <find>SEP</find>
+      <find>getint</find>
+      <find>&quot;http://localhost:3333</find>
     </findStrings>
+    <replaceStrings>
+      <replace>3333</replace>
+      <replace>TestHelper.getBaseUrl()+&quot;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -115,35 +219,46 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/revolut/enums/TransactionState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/revolut/enums/Currency.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revolut/domain/transaction/ITransaction.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/revolut/unit/TransactionTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/revolut/unit/AccountTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revolut/controller/HealthController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/revolut/integration/RouterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revolut/util/ControllerUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/revolut/service/IService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/AccountDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/revolut/exception/ApiException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revolut/util/ExceptionUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/revolut/router/Router.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/revolut/controller/TransactionController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/revolut/unit/ExceptionUtilsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/revolut/unit/ControllerUtilsTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/revolut/util/JsonUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/revolut/service/TransactionService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/revolut/TestHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/revolut/extensions/ApiTestExtension.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/TransactionDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revolut/exception/BadRequestException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revolut/exception/RestClientException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revolut/exception/NotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revolut/util/Validator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/revolut/domain/account/Account.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revolut/domain/transaction/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/revolut/integration/MoneyTransactionsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revolut/controller/AccountController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/controller/TransactionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/repositories/AbstractRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/repositories/AccountRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/repositories/IRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/repositories/TransactionRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/revolut/unit/AccountTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/revolut/unit/TransactionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/router/Router.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/revolut/SparkStarter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/revolut/SparkStarterTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/revolut/extensions/ApiTestExtension.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/revolut/TestHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/revolut/integration/RouterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/revolut/integration/AccountIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/revolut/integration/MoneyTransactionsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/domain/account/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/enums/Currency.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/exception/ApiException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/service/IService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/service/AccountService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/service/TransactionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/util/JsonUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/config/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/TransactionDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/AccountDTO.java" />
       </list>
     </option>
   </component>
@@ -163,9 +278,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-267" />
-    <option name="y" value="-877" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
@@ -177,9 +291,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,15 +334,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="revolut" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="money-transfer-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="money-transfer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="revolut" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="money-transfer-api" type="b2602c69:ProjectViewProjectNode" />
@@ -375,10 +479,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="pom&#9;FILE&#9;file:///Users/algarcia/gitNico/money-transfer-api/pom.xml" />
+    <property name="SearchEverywhereHistoryKey" value="vali&#9;FILE&#9;file:///Users/algarcia/gitNico/money-transfer-api/src/main/java/com/revolut/util/Validator.java&#10;pom&#9;FILE&#9;file:///Users/algarcia/gitNico/money-transfer-api/pom.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -397,6 +502,10 @@
       <recent name="com.revolut.unit" />
       <recent name="com.revolut.util" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -410,12 +519,52 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidAmount">
+  <component name="RunManager" selected="JUnit.MoneyTransactionsTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="AccountIntegrationTest.testCreateAccountWithInvalidFieldsShouldReturnBadRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="money-transfer-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revolut.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.revolut.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.revolut.integration.AccountIntegrationTest" />
+      <option name="METHOD_NAME" value="testCreateAccountWithInvalidFieldsShouldReturnBadRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="All in money-transfer-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="money-transfer-api" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="MoneyTransactionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="money-transfer-api" />
@@ -440,7 +589,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="MoneyTransactionsTest.testMakeASuccessfulTransactionBetweenAccounts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RouterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="money-transfer-api" />
       <extension name="coverage">
         <pattern>
@@ -451,78 +600,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.revolut.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.revolut.integration.MoneyTransactionsTest" />
-      <option name="METHOD_NAME" value="testMakeASuccessfulTransactionBetweenAccounts" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MoneyTransactionsTest.testMakeATransactionBetweenAccountsWithoutFunds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="money-transfer-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.revolut.integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.revolut.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.revolut.integration.MoneyTransactionsTest" />
-      <option name="METHOD_NAME" value="testMakeATransactionBetweenAccountsWithoutFunds" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="money-transfer-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.revolut.integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.revolut.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.revolut.integration.MoneyTransactionsTest" />
-      <option name="METHOD_NAME" value="testMakeATransactionProvidingAnInvalidAmount" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidDebitAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="money-transfer-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.revolut.integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.revolut.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.revolut.integration.MoneyTransactionsTest" />
-      <option name="METHOD_NAME" value="testMakeATransactionProvidingAnInvalidDebitAccount" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.revolut.integration.RouterTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -539,6 +619,29 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="com.revolut.integration in money-transfer-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="money-transfer-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revolut.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.revolut.integration" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -571,19 +674,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.MoneyTransactionsTest.testMakeASuccessfulTransactionBetweenAccounts" />
-      <item itemvalue="JUnit.MoneyTransactionsTest.testMakeATransactionBetweenAccountsWithoutFunds" />
+      <item itemvalue="JUnit.All in money-transfer-api" />
+      <item itemvalue="JUnit.AccountIntegrationTest.testCreateAccountWithInvalidFieldsShouldReturnBadRequest" />
+      <item itemvalue="JUnit.com.revolut.integration in money-transfer-api" />
+      <item itemvalue="JUnit.RouterTest" />
       <item itemvalue="JUnit.MoneyTransactionsTest" />
-      <item itemvalue="JUnit.MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidDebitAccount" />
-      <item itemvalue="JUnit.MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidAmount" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidAmount" />
-        <item itemvalue="JUnit.MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidDebitAccount" />
-        <item itemvalue="JUnit.MoneyTransactionsTest.testMakeASuccessfulTransactionBetweenAccounts" />
         <item itemvalue="JUnit.MoneyTransactionsTest" />
-        <item itemvalue="JUnit.MoneyTransactionsTest.testMakeATransactionBetweenAccountsWithoutFunds" />
+        <item itemvalue="JUnit.All in money-transfer-api" />
+        <item itemvalue="JUnit.RouterTest" />
+        <item itemvalue="JUnit.com.revolut.integration in money-transfer-api" />
+        <item itemvalue="JUnit.AccountIntegrationTest.testCreateAccountWithInvalidFieldsShouldReturnBadRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -598,52 +701,53 @@
       <option name="presentableId" value="Default" />
       <updated>1561091983485</updated>
       <workItem from="1561091987346" duration="46000" />
-      <workItem from="1561229225707" duration="25625000" />
+      <workItem from="1561229225707" duration="30676000" />
+      <workItem from="1561594535649" duration="3436000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MoneyTransactionsTest_testMakeATransactionProvidingAnInvalidDebitAccount - 2019.06.25 at 23h 44m 20s.xml">
-      <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidDebitAccount" configurationId="JUnit" />
+    <history-entry file="All_in_money-transfer-api - 2019.06.26 at 21h 40m 36s.xml">
+      <configuration name="All in money-transfer-api" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MoneyTransactionsTest_testMakeATransactionProvidingAnInvalidDebitAccount - 2019.06.25 at 23h 45m 09s.xml">
-      <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidDebitAccount" configurationId="JUnit" />
+    <history-entry file="All_in_money-transfer-api - 2019.06.26 at 21h 41m 02s.xml">
+      <configuration name="All in money-transfer-api" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MoneyTransactionsTest_testMakeATransactionProvidingAnInvalidDebitAccount - 2019.06.25 at 23h 46m 59s.xml">
-      <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidDebitAccount" configurationId="JUnit" />
+    <history-entry file="All_in_money-transfer-api - 2019.06.26 at 21h 50m 07s.xml">
+      <configuration name="All in money-transfer-api" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MoneyTransactionsTest_testMakeATransactionProvidingAnInvalidDebitAccount - 2019.06.25 at 23h 47m 05s.xml">
-      <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidDebitAccount" configurationId="JUnit" />
+    <history-entry file="All_in_money-transfer-api - 2019.06.26 at 22h 00m 26s.xml">
+      <configuration name="All in money-transfer-api" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MoneyTransactionsTest_testMakeATransactionProvidingAnInvalidDebitAccount - 2019.06.25 at 23h 47m 08s.xml">
-      <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidDebitAccount" configurationId="JUnit" />
+    <history-entry file="RouterTest - 2019.06.26 at 22h 07m 28s.xml">
+      <configuration name="RouterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MoneyTransactionsTest_testMakeATransactionProvidingAnInvalidAmount - 2019.06.25 at 23h 48m 11s.xml">
-      <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidAmount" configurationId="JUnit" />
+    <history-entry file="All_in_money-transfer-api - 2019.06.26 at 22h 08m 24s.xml">
+      <configuration name="All in money-transfer-api" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MoneyTransactionsTest_testMakeATransactionProvidingAnInvalidAmount - 2019.06.25 at 23h 48m 29s.xml">
-      <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidAmount" configurationId="JUnit" />
+    <history-entry file="All_in_money-transfer-api - 2019.06.26 at 22h 13m 54s.xml">
+      <configuration name="All in money-transfer-api" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MoneyTransactionsTest_testMakeATransactionProvidingAnInvalidAmount - 2019.06.26 at 02h 32m 39s.xml">
-      <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidAmount" configurationId="JUnit" />
+    <history-entry file="MoneyTransactionsTest - 2019.06.26 at 23h 17m 49s.xml">
+      <configuration name="MoneyTransactionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MoneyTransactionsTest_testMakeATransactionProvidingAnInvalidAmount - 2019.06.26 at 02h 32m 50s.xml">
-      <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidAmount" configurationId="JUnit" />
+    <history-entry file="MoneyTransactionsTest - 2019.06.26 at 23h 20m 15s.xml">
+      <configuration name="MoneyTransactionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MoneyTransactionsTest_testMakeATransactionProvidingAnInvalidAmount - 2019.06.26 at 02h 33m 45s.xml">
-      <configuration name="MoneyTransactionsTest.testMakeATransactionProvidingAnInvalidAmount" configurationId="JUnit" />
+    <history-entry file="MoneyTransactionsTest - 2019.06.26 at 23h 20m 27s.xml">
+      <configuration name="MoneyTransactionsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25671000" />
+    <option name="totallyTimeSpent" value="34158000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-267" y="-1057" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32935324" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32916668" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -651,14 +755,14 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.221875" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2581818" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18849841" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -682,23 +786,55 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/revolut/domain/account/Account.java</url>
-          <line>66</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/revolut/service/AccountService.java</url>
+          <line>15</line>
           <properties />
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/revolut/integration/MoneyTransactionsTest.java</url>
-          <line>88</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/revolut/Main.java</url>
+          <line>19</line>
           <properties />
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="48" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="Spark.port()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>Spark.port()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>Config.hasKey(&quot;api.spark.porat&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Config.hasKey(&quot;api.spark.port&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Config.getInt(&quot;api.spark.porqt&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Config.getInt(&quot;api.spark.port&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>TestHelper.getJsonFromResponse(response)</expression-string>
         <language-id>JAVA</language-id>
@@ -724,111 +860,16 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>JsonUtils.make().toJson(&quot;&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ObjectMapp</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>json.contains(&quot;\&quot;amoun\&quot;&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>json.contains(&quot;amoun&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/kvs/AccountKvsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/domain/Identifiable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/domain/account/IAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/domain/transaction/ITransaction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/controller/HealthController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sparkjava/spark-core/2.8.0/spark-core-2.8.0.jar!/spark/Spark.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="410" column="23" selection-start-line="410" selection-start-column="23" selection-end-line="410" selection-end-column="23" />
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#14211#14212#0" expanded="true" />
-            <element signature="e#14262#14263#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar!/org/junit/jupiter/api/function/Executable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/locks/ReentrantLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="237" column="11" selection-start-line="237" selection-start-column="11" selection-end-line="237" selection-end-column="11" />
-          <folding>
-            <element signature="e#7758#7759#0" expanded="true" />
-            <element signature="e#7798#7799#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="392" column="51" selection-start-line="392" selection-start-column="51" selection-end-line="392" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sparkjava/spark-core/2.8.0/spark-core-2.8.0.jar!/spark/http/matching/MatcherFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar!/org/apache/http/entity/ContentType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -842,84 +883,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/unit/ControllerUtilsTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/util/JsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        <state relative-caret-position="183">
+          <caret line="302" column="6" selection-start-line="302" selection-start-column="6" selection-end-line="302" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="304" selection-start-line="304" selection-end-line="304" />
+        <state relative-caret-position="267">
+          <caret line="294" lean-forward="true" selection-start-line="294" selection-end-line="294" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/AccountDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/domain/transaction/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="175">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/TestHelper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state relative-caret-position="402">
+          <caret line="378" column="18" selection-start-line="378" selection-start-column="18" selection-end-line="378" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/controller/TransactionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/repositories/IRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/repositories/AbstractRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/repositories/AccountRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/extensions/ApiTestExtension.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/repositories/TransactionRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1393#1394#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/TransactionDTO.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Throwable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="183">
+          <caret line="380" column="18" selection-start-line="380" selection-start-column="18" selection-end-line="380" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/integration/RouterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/unit/TransactionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="385">
+          <caret line="54" column="81" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -928,28 +987,131 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/unit/AccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/unit/TransactionTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sparkjava/spark-core/2.8.0/spark-core-2.8.0.jar!/spark/servlet/SparkApplication.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        <state relative-caret-position="60">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sparkjava/spark-core/2.8.0/spark-core-2.8.0.jar!/spark/Spark.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="418" column="23" selection-start-line="418" selection-start-column="23" selection-end-line="418" selection-end-column="23" />
+          <folding>
+            <element signature="e#14369#14370#0" expanded="true" />
+            <element signature="e#14410#14411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/SparkStarterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/router/Router.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar!/org/junit/jupiter/api/extension/ExtendWith.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.2/commons-configuration2-2.2.jar!/org/apache/commons/configuration2/ImmutableConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/integration/AccountIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/integration/RouterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="52" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/domain/account/IAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/enums/Currency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/enums/TransactionState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/exception/ApiException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state relative-caret-position="1035">
+          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -963,31 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/exception/NotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding>
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/exception/RestClientException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/IllegalArgumentException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-          <folding>
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/exception/ConstraintsViolationException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -995,146 +1132,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Objects.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/exception/NotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="246" column="19" lean-forward="true" selection-start-line="246" selection-start-column="19" selection-end-line="246" selection-end-column="19" />
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/util/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/domain/account/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="33" />
-          <folding>
-            <element signature="e#1289#1290#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/domain/transaction/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1876#1877#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/router/Router.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/integration/MoneyTransactionsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="88" column="63" lean-forward="true" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/service/IService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/config/Config.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/exception/RestClientException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/service/TransactionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/controller/HealthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/enums/TransactionState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/enums/Currency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/util/ControllerUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="325">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/repositories/AccountRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/repositories/TransactionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1145,31 +1163,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/repositories/AbstractRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/repositories/IRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/controller/AccountController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/util/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/controller/TransactionController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/util/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="63" lean-forward="true" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+        <state relative-caret-position="180">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/service/TransactionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/service/IService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/integration/MoneyTransactionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="73" column="71" lean-forward="true" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/config/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1410#1411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/TestHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/TransactionDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1286#1287#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/datatransferobject/AccountDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revolut/extensions/ApiTestExtension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revolut/domain/account/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-206">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

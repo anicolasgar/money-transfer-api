@@ -2,6 +2,7 @@ package com.revolut.unit;
 
 import com.revolut.domain.account.Account;
 import com.revolut.enums.Currency;
+import com.revolut.exception.ConstraintsViolationException;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
@@ -14,26 +15,26 @@ public class AccountTest {
 
     @Test
     void testAccountWithNullIdShouldThrowException() {
-        NullPointerException exception = assertThrows(NullPointerException.class, () -> new Account(null, Currency.USD, true, new BigDecimal(5)));
-        assertEquals("id cannot be null", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> new Account(null, Currency.USD, true, new BigDecimal(5)));
+        assertEquals("id cannot be null", exception.getDescription());
     }
 
     @Test
     void testAccountWithNullCurrencyShouldThrowException() {
-        NullPointerException exception = assertThrows(NullPointerException.class, () -> new Account(1L, null, true, new BigDecimal(5)));
-        assertEquals("currency cannot be null", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> new Account(1L, null, true, new BigDecimal(5)));
+        assertEquals("currency cannot be null", exception.getDescription());
     }
 
     @Test
     void testAccountWithNullBalanceShouldThrowException() {
-        NullPointerException exception = assertThrows(NullPointerException.class, () -> new Account(1L, Currency.USD, true, null));
-        assertEquals("balance cannot be null", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> new Account(1L, Currency.USD, true, null));
+        assertEquals("balance cannot be null", exception.getDescription());
     }
 
     @Test
     void testAccountWithNegativeBalanceShouldThrowException() {
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> new Account(1L, Currency.USD, true, new BigDecimal(-5)));
-        assertEquals("amount cannot be negative", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> new Account(1L, Currency.USD, true, new BigDecimal(-5)));
+        assertEquals("balance cannot be negative", exception.getDescription());
     }
 
     @Test
@@ -50,8 +51,8 @@ public class AccountTest {
         Account account = new Account(1L, Currency.USD, true, new BigDecimal(5));
         assertEquals(new BigDecimal(5), account.getBalance());
 
-        NullPointerException exception = assertThrows(NullPointerException.class, () -> account.debit(null));
-        assertEquals("amount cannot be null", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> account.debit(null));
+        assertEquals("amount cannot be null", exception.getDescription());
     }
 
     @Test
@@ -59,8 +60,8 @@ public class AccountTest {
         Account account = new Account(1L, Currency.USD, true, new BigDecimal(5));
         assertEquals(new BigDecimal(5), account.getBalance());
 
-        NullPointerException exception = assertThrows(NullPointerException.class, () -> account.credit(null));
-        assertEquals("amount cannot be null", exception.getMessage());
+        ConstraintsViolationException exception = assertThrows(ConstraintsViolationException.class, () -> account.credit(null));
+        assertEquals("amount cannot be null", exception.getDescription());
     }
 
     @Test

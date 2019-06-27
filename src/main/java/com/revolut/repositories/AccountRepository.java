@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class AccountRepository {//extends AbstractRepository<Account> {
+public class AccountRepository implements IRepository<Account, AccountDTO> {
     private final ConcurrentMap<Long, Account> accounts;
     private static AtomicInteger counter;
     private static AccountRepository instance = null;
@@ -25,12 +25,12 @@ public class AccountRepository {//extends AbstractRepository<Account> {
         this.accounts = accounts;
     }
 
-    //    @Override
+    @Override
     public Account findById(Long id) {
         return this.accounts.get(id);
     }
 
-    //    @Override
+    @Override
     public Account create(AccountDTO accountDTO) {
         accountDTO.setId((long) counter.incrementAndGet());
         Account accountDO = Account.make(accountDTO);
@@ -38,7 +38,7 @@ public class AccountRepository {//extends AbstractRepository<Account> {
         return accountDO;
     }
 
-    //    @Override
+    @Override
     public boolean delete(Long id) {
         return this.accounts.remove(id) != null;
     }

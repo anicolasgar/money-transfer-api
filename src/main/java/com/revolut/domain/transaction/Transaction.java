@@ -25,7 +25,7 @@ public class Transaction implements ITransaction {
         Validator.validateNotNull(creditAccount, "credit_account cannot be null");
         Validator.validateNotNull(amount, "amount cannot be null");
         Validator.validateNotNull(transactionState, "transaction_state cannot be null");
-        Validator.validateAmountNotNegative(amount);
+        Validator.validateNotNegative(amount,"amount");
         Validator.validateDifferentAccounts(creditAccount, debitAccount);
 
         this.id = id;

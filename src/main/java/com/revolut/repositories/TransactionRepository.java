@@ -1,14 +1,13 @@
 package com.revolut.repositories;
 
 import com.revolut.datatransferobject.TransactionDTO;
-import com.revolut.domain.account.Account;
 import com.revolut.domain.transaction.Transaction;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class TransactionRepository {
+public class TransactionRepository implements IRepository<Transaction, TransactionDTO> {
     private final ConcurrentMap<Long, Transaction> transactions;
     private static AtomicInteger counter;
     private static TransactionRepository instance = null;
@@ -25,10 +24,12 @@ public class TransactionRepository {
         this.transactions = transactions;
     }
 
-    public Transaction findById(long id) {
-        return transactions.get(id);
+    @Override
+    public Transaction findById(Long id) {
+        return this.transactions.get(id);
     }
 
+    @Override
     public Transaction create(TransactionDTO transactionDTO) {
         transactionDTO.setId((long) counter.incrementAndGet());
         Transaction transactionDO = Transaction.make(transactionDTO);
@@ -36,6 +37,7 @@ public class TransactionRepository {
         return transactionDO;
     }
 
+    @Override
     public boolean delete(Long id) {
         return this.transactions.remove(id) != null;
     }

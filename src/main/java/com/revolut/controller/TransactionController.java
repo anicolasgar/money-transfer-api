@@ -15,8 +15,12 @@ public class TransactionController {
     public static Object getById(Request request, Response response) throws Exception {
         Long transactionId = Long.parseLong(request.params(":id"));
 
-        response.status(HttpServletResponse.SC_OK);
         Transaction transaction= TransactionService.INSTANCE.findById(transactionId);
+        response.status(HttpServletResponse.SC_OK);
+
+        if(transaction==null)
+            response.status(HttpServletResponse.SC_NOT_FOUND);
+
         return JsonUtils.make().toJson(transaction);
     }
 

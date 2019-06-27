@@ -17,8 +17,12 @@ public class AccountController {
     public static Object getById(Request request, Response response) throws Exception {
         Long accountId = Long.parseLong(request.params(":id"));
 
-        response.status(HttpServletResponse.SC_OK);
         Account account = AccountService.INSTANCE.findById(accountId);
+        response.status(HttpServletResponse.SC_OK);
+
+        if(account==null)
+            response.status(HttpServletResponse.SC_NOT_FOUND);
+
         return JsonUtils.make().toJson(account);
     }
 
