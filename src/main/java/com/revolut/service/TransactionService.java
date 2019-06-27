@@ -37,35 +37,33 @@ public enum TransactionService implements IService<Transaction, TransactionDTO> 
         if (creditAccount == null)
             throw new NotFoundException("account " + transactionDTO.getDebitAccount() + " not found");
 
+        return makeTransaction(debitAccount, creditAccount, transactionDTO);
+    }
+
+    private synchronized Transaction makeTransaction(Account debitAccount, Account creditAccount, TransactionDTO transactionDTO) {
         final Lock debitLock = debitAccount.writeLock();
+        final Lock creditLock = creditAccount.writeLock();
+        Long waitInterval = Config.getLong("transactions.lock.wait.interval");
+
         try {
-            if (debitLock.tryLock(Config.getLong("transactions.lock.wait.interval"), TimeUnit.MILLISECONDS)) {
-                try {
-                    final Lock creditLock = creditAccount.writeLock();
-                    if (creditLock.tryLock(Config.getLong("transactions.lock.wait.interval"), TimeUnit.MILLISECONDS)) {
-                        try {
-                            if (debitAccount.debit(transactionDTO.getAmount())) {
-                                if (creditAccount.credit(transactionDTO.getAmount())) {
-                                    transactionDTO.setState(TransactionState.COMPLETED);
-                                }
-                            } else {
-                                transactionDTO.setState(TransactionState.INSUFFICIENT_FUNDS);
-                            }
-                        } finally {
-                            creditLock.unlock();
-                        }
-                    } else {
-                        transactionDTO.setState(TransactionState.CONCURRENCY_ERROR);
-                    }
-                } finally {
-                    debitLock.unlock();
+            boolean resourceAvailable = debitLock.tryLock(waitInterval, TimeUnit.MILLISECONDS) && creditLock.tryLock(waitInterval, TimeUnit.MILLISECONDS);
+            if (resourceAvailable) {
+                if (debitAccount.debit(transactionDTO.getAmount())) {
+                    creditAccount.credit(transactionDTO.getAmount());
+                    transactionDTO.setState(TransactionState.COMPLETED);
+                } else {
+                    transactionDTO.setState(TransactionState.INSUFFICIENT_FUNDS);
                 }
             } else {
                 transactionDTO.setState(TransactionState.CONCURRENCY_ERROR);
             }
+
         } catch (InterruptedException e) {
             transactionDTO.setState(TransactionState.CONCURRENCY_ERROR);
             logger.error(e.getLocalizedMessage(), e);
+        } finally {
+            debitLock.unlock();
+            creditLock.unlock();
         }
         Transaction transaction = TransactionRepository.getInstance().create(transactionDTO);
         logger.trace("Transaction {} completed", transaction.getId());
